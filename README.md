@@ -30,11 +30,11 @@ p.innerText = "hogehoge";
 document.body.appendChild(p);
 
 // After(CDN & Web Browser)
-createElement(document.body, "p", (p) => p.innerText = "hogehoge");
+createElement(document.body, "p", (p) => p.ref.innerText = "hogehoge");
 
 // After(Node & TypeScript)
 import { createElement } from "@tbtk-site/tbtk-create-element";
-createElement(document.body, "p", (p) => p.innerText = "hogehoge");
+createElement(document.body, "p", (p) => p.ref.innerText = "hogehoge");
 ```
 
 ### Example of creating a table
