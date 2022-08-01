@@ -20,6 +20,10 @@ Using jsDelivr:
 <script src="https://cdn.jsdelivr.net/npm/@tbtk-site/tbtk-create-element/dist/index.min.js"></script>
 ```
 
+RunKit Demo
+
+[https://runkit.com/tbtk-site/62e7ccc61817e30008e1b8e8](https://runkit.com/tbtk-site/62e7ccc61817e30008e1b8e8)
+
 ## How to use
 
 ### Example of creating a simple 1-element
