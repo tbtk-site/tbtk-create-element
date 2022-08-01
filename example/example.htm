@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../dist/index.js"></script>
+    <title>動作サンプル</title>
+    <style>
+      table {
+        border: 1px black solid;
+      }
+
+      th {
+        border: 1px black solid;
+      }
+
+      td {
+        border: 1px black solid;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      createElement(document.body, "table")
+        .child("thead", (thead) =>
+          thead.child("tr", (tr) =>
+                tr.child("th", (th) => (th.ref.innerHTML = "header 1"))
+                  .child("th", (th) => (th.ref.innerHTML = "header 2"))
+                  .child("th", (th) => (th.ref.innerHTML = "header 3"))
+          )
+        )
+        .child("tbody", (tbody) =>
+          tbody.child("tr", (tr) =>
+                tr.child("td", (td) => (td.ref.innerHTML = "col 1"))
+                  .child("td", (td) => (td.ref.innerHTML = "col 2"))
+                  .child("td", (td) => (td.ref.innerHTML = "col 3"))
+          )
+        );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                       // ES2016向けのコードを出す
+    "module": "ES2015",                       // ES2015モジュールを使う
+    "moduleResolution": "node",               // とりあえず「node」でいい
+    "declaration": true,                      // 型定義ファイルを出力する
+    "outDir": "./dist",                       // 出力先
+    "esModuleInterop": true,                  // CommonJSとの相互運用
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字は区別する
+    "strict": true,                           // 厳密オプション
+    "lib": ["ES2020", "DOM"],                 // DOMを使うライブラリなので
+    "types": ["jest"]                         // これを入れておかないとJestが使えない
+  },
+  "include": [
+    "./src"                                   // 余計なファイルをビルドされると困るため
+  ]
+}
