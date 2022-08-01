@@ -10,7 +10,12 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        use: "ts-loader"
+        use: {
+          loader: "ts-loader",
+          options: {
+            configFile: "tsconfig.cdn.json",
+          }
+        }
       }
     ]
   },
@@ -24,7 +29,7 @@ module.exports = {
     // cdn系はindex.jsだけあればいいので、混乱を招かないよう消す
     new RemovePlugin({
       after: {
-        include: ["./dist/cdn.d.ts"]
+        include: ["./dist/cdn.js", "./dist/cdn.d.ts"]
       }
     })
   ]

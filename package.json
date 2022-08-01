@@ -1,12 +1,12 @@
 {
   "name": "@tbtk-site/tbtk-create-element",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Assemble 'document.createElement' with Arrow function expression without using temporary variables.",
   "main": "dist/tbtk-create-element.js",
   "types": "dist/tbtk-create-element.d.ts",
   "scripts": {
     "prepublishOnly": "yarn run build",
-    "build": "webpack",
+    "build": "tsc && webpack",
     "test": "jest"
   },
   "files": [
