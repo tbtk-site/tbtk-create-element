@@ -1,6 +1,6 @@
 {
   "name": "@tbtk-site/tbtk-create-element",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Assemble 'document.createElement' with Arrow function expression without using temporary variables.",
   "main": "dist/tbtk-create-element.js",
   "types": "dist/tbtk-create-element.d.ts",
@@ -20,6 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/tbtk-site/tbtk-create-element.git"
   },
+  "keywords": ["createElement", "Method chaining"],
   "author": "tbtk-site",
   "license": "MIT",
   "jest": {
