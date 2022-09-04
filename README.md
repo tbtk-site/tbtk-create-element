@@ -95,9 +95,3 @@ createElement(document.body, "table")
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-## TypeScript & Yarn3(PnP)
-
-Please note that the test will not work properly due to PnP if the following steps are not taken.
-
-[TypeScript + PnP quick start](https://yarnpkg.com/getting-started/recipes#typescript--pnp-quick-start)
