@@ -1,0 +1,16 @@
+{
+  "name": "@tbtk-site/tbtk-create-element-cjs-example",
+  "version": "1.0.0",
+  "description": "Sample using commonJS",
+  "main": "example.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "devDependencies": {
+    "@tbtk-site/tbtk-create-element": "../..",
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0"
+  }
+}

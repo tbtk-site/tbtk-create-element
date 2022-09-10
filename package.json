@@ -1,18 +1,20 @@
 {
   "name": "@tbtk-site/tbtk-create-element",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Assemble 'document.createElement' with Arrow function expression without using temporary variables.",
-  "main": "dist/tbtk-create-element.js",
+  "main": "dist/cjs/tbtk-create-element.js",
+  "module": "dist/esm/tbtk-create-element.mjs",
   "types": "dist/tbtk-create-element.d.ts",
   "scripts": {
     "prepublishOnly": "yarn run build",
-    "build": "tsc && webpack",
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json && webpack",
     "test": "jest"
   },
   "files": [
     "dist/index.js",
-    "dist/tbtk-create-element.js",
     "dist/tbtk-create-element.d.ts",
+    "dist/cjs/tbtk-create-element.js",
+    "dist/esm/tbtk-create-element.mjs",
     "README.md"
   ],
   "homepage": "https://github.com/tbtk-site/tbtk-create-element",
@@ -20,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/tbtk-site/tbtk-create-element.git"
   },
-  "keywords": ["createElement", "Method chaining"],
+  "keywords": ["createElement", "Method chaining", "TypeScript", "DOM"],
   "author": "tbtk-site",
   "license": "MIT",
   "jest": {
@@ -37,7 +39,7 @@
     },
     "globals": {
       "ts-jest": {
-        "tsconfig": "tsconfig.json"
+        "tsconfig": "tsconfig.cjs.json"
       }
     }
   },

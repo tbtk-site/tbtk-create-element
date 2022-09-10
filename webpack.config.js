@@ -20,7 +20,9 @@ module.exports = {
     ]
   },
   output: {
-    filename: "index.js"
+    filename: "index.js",
+    globalObject: "window", // DOMを使うタイプのライブラリなので、windowの下に生やす
+    libraryTarget: "umd"    // CDN向けなので、ユニバーサルにする
   },
   resolve: {
     extensions: [".ts"]
