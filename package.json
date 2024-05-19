@@ -6,7 +6,7 @@
   "module": "dist/esm/tbtk-create-element.mjs",
   "types": "dist/tbtk-create-element.d.ts",
   "scripts": {
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "pnpm run build",
     "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json && webpack",
     "test": "jest"
   },
@@ -43,7 +43,6 @@
       }
     }
   },
-  "packageManager": "yarn@3.2.2",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@types/jest": "^28.1.6",
