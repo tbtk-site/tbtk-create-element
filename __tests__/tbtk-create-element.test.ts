@@ -1,6 +1,5 @@
 import { createElement } from "../src/tbtk-create-element";
 import "@testing-library/jest-dom";
-import "@testing-library/jest-dom/extend-expect";
 
 test("コールバックを省略して1要素を作成することができる", (): void => {
     // 挿入場所のセットアップ
